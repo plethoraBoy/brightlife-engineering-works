@@ -1,54 +1,60 @@
-# React + TypeScript + Vite
+# WRAPTECH Enterprises
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing site rebuilt on **Next.js 16 (App Router)** with a new "OPS DECK"
+visual system: brutalist structure, aurora-lit dark panels, HUD telemetry
+motifs and pop-charge accents. This is a full rework — the previous dark
+"SIGNAL" and paper "FIELD GUIDE" designs are gone.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Next.js 16 · React 19 · TypeScript (strict)
+- framer-motion for motion
+- react-icons for UI glyphs
+- Firebase Firestore for the contact form
 
-## Expanding the ESLint configuration
+## Routes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Route | Description |
+| --- | --- |
+| `/` | Operations hero with live feed monitor, capability ticker, remit, 14-system catalogue, protocol, brief and final channel |
+| `/services` | System architecture map: five chapters with technical plates and a sticky index |
+| `/contact` | Correspondence deck: dossier, map and enquiry console |
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting started
+
+```bash
+yarn install
+yarn dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The dev server runs on [http://localhost:5173](http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+yarn build   # production build
+yarn start   # serve the production build
+yarn lint    # eslint
 ```
+
+## Project structure
+
+```
+src/
+  app/
+    layout.tsx          root layout, fonts, metadata, global shell
+    page.tsx            home
+    globals.css         OPS DECK tokens + global utilities
+    services/           systems route
+    contact/            contact route
+  components/
+    Brand, SiteNav, SiteFooter, ScrollTools, Reveal
+    deck/               home page sections
+  lib/
+    content.ts          single source of truth for site copy/data
+    firebase.ts         Firebase app + Firestore instance
+```
+
+## Contact form
+
+Submissions are written to the `contacts` collection in Firestore with
+`name`, `email`, `message` and `timestamp`. Firebase web config lives in
+`src/lib/firebase.ts`.

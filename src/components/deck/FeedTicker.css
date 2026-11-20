@@ -1,0 +1,37 @@
+.feed {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  padding-block: 1rem;
+  border-block: 3px solid var(--void);
+  background: var(--void);
+  color: var(--lemon);
+}
+
+.feed__track {
+  display: flex;
+  width: max-content;
+  animation: ticker 38s linear infinite;
+}
+
+.feed__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding-right: 2.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.feed__star {
+  color: var(--orange);
+  font-size: 1rem;
+}
+
+.feed:hover .feed__track {
+  animation-play-state: paused;
+}
