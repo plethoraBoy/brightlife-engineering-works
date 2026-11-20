@@ -1,6 +1,6 @@
 # Brightlife Engineering Works
 
-Live site: https://wraptech-enterprises-web-plethoraboys-projects.vercel.app
+Live site: https://brightlife-engineering-works.vercel.app
 
 Marketing site rebuilt on **Next.js 16 (App Router)** with a new "OPS DECK"
 visual system: brutalist structure, aurora-lit dark panels, HUD telemetry
