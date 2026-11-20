@@ -27,6 +27,7 @@ const mono = Space_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://wraptech-enterprises-web-plethoraboys-projects.vercel.app"),
   title: {
     default: "Brightlife Engineering Works — Systems, live on site",
     template: "%s / Brightlife Engineering Works",
