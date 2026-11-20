@@ -97,8 +97,9 @@ export default function ContactPage() {
           </h1>
 
           <p className="lede con-hero__lede">
-            Security, surveillance, networks, automation or safety — tell us
-            what you are solving and we will route it to the right desk.
+            Electrical work, CCTV, AC installation, inverters or the wider
+            security and network systems — tell us what you are solving and we
+            will route it to the right desk.
           </p>
 
           <div className="con-telemetry">
@@ -167,21 +168,21 @@ export default function ContactPage() {
                     <span key={line}>{line}</span>
                   ))}
                 </address>
-                <span className="sticker sticker--cyan con-card__badge">CHENNAI / 600 070</span>
+                <span className="sticker sticker--cyan con-card__badge">CHENNAI / 600 081</span>
               </section>
             </div>
 
             <section className="con-map" aria-labelledby="con-map-title">
               <div className="con-map__bar">
                 <p className="mono con-map__title" id="con-map-title">
-                  SITE FEED / ANAKAPUTHUR
+                  SITE FEED / NEW WASHERMENPET
                 </p>
                 <span className="mono con-map__folio">MAP / 01</span>
               </div>
 
               <div className="con-map__frame">
                 <iframe
-                  title="Map showing Brightlife Engineering Works' location in Anakaputhur, Chennai"
+                  title="Map showing Brightlife Engineering Works' location in New Washermenpet, Chennai"
                   src={contact.mapSrc}
                   loading="lazy"
                   allowFullScreen
@@ -190,7 +191,7 @@ export default function ContactPage() {
                 <span className="scanlines" aria-hidden="true" />
                 <span className="brackets" aria-hidden="true" />
                 <span className="mono con-map__scrim" aria-hidden="true">
-                  ANAKAPUTHUR / CHENNAI 600 070
+                  NEW WASHERMENPET / CHENNAI 600 081
                 </span>
               </div>
 

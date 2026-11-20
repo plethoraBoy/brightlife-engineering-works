@@ -180,16 +180,70 @@ export const faqs = [
   },
 ];
 
+export const electricalWorks = [
+  {
+    number: "01",
+    title: "Total wiring",
+    copy: "Complete residential and commercial wiring, from first fix to final connection and testing.",
+  },
+  {
+    number: "02",
+    title: "CCTV security",
+    copy: "Camera coverage planned around the site, installed and maintained for a clear view of activity.",
+  },
+  {
+    number: "03",
+    title: "AC installation",
+    copy: "Cooling installed with the right power supply, cable routes and commissioning.",
+  },
+  {
+    number: "04",
+    title: "Inverter & backup",
+    copy: "Inverters and backup power sized to the load so the circuits that matter stay live.",
+  },
+  {
+    number: "05",
+    title: "Distribution boards",
+    copy: "Distribution and protection laid out cleanly, labelled and safe to work on.",
+  },
+  {
+    number: "06",
+    title: "Maintenance & upgrades",
+    copy: "Diagnostics, servicing and upgrades for existing systems — not just new installations.",
+  },
+];
+
+export const serviceAreas = [
+  "Kolathur",
+  "Perangalathur",
+  "New Washermenpet",
+  "Tondiarpet",
+  "Ambattur",
+  "Royapuram",
+  "MKB Nagar",
+];
+
+export const social = {
+  platform: "Instagram",
+  handle: "@brightlife_engineering_works",
+  url: "https://www.instagram.com/brightlife_engineering_works/",
+  followers: "251",
+  rating: "4.8",
+  reviews: "18",
+  tagline: "Safe Power. Brighter Tomorrow.",
+};
+
 export const contact = {
-  person: "DCRUZ ANTONY",
-  role: "Managing Director",
-  phone: "+91 91769 19024",
-  phoneHref: "tel:+919176919024",
-  emails: ["wraptech1@outlook.com", "techwrap1@gmail.com"],
+  person: "MANAGER YOGARAJ",
+  role: "Manager",
+  phone: "+91 78454 16478",
+  phoneHref: "tel:+917845416478",
+  emails: ["brightlifeengineering@gmail.com"],
   address: [
-    "No.15, Annai Mary 1st Street,",
-    "Kamarajapuram, Anakaputhur,",
-    "Chennai – 600 070.",
+    "5/3 Market Farm,",
+    "Corporation Colony 2nd St,",
+    "New Washermenpet, Tondiarpet,",
+    "Chennai – 600 081.",
   ],
-  mapSrc: "https://www.google.com/maps?q=Anakaputhur,+Chennai&output=embed",
+  mapSrc: "https://www.google.com/maps?q=New+Washermenpet,+Tondiarpet,+Chennai&output=embed",
 };

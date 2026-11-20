@@ -9,10 +9,11 @@ import "./SiteNav.css";
 
 const links = [
   { label: "INDEX", href: "/", num: "01", section: "top" },
-  { label: "REMIT", href: "/#remit", num: "02", section: "remit" },
-  { label: "SYSTEMS", href: "/services", num: "03", section: "services" },
-  { label: "BRIEF", href: "/#brief", num: "04", section: "brief" },
-  { label: "CONTACT", href: "/contact", num: "05", section: "contact" },
+  { label: "ELECTRICAL", href: "/#electrical-works", num: "02", section: "electrical-works" },
+  { label: "REMIT", href: "/#remit", num: "03", section: "remit" },
+  { label: "SYSTEMS", href: "/services", num: "04", section: "services" },
+  { label: "BRIEF", href: "/#brief", num: "05", section: "brief" },
+  { label: "CONTACT", href: "/contact", num: "06", section: "contact" },
 ];
 
 export default function SiteNav() {
@@ -30,7 +31,7 @@ export default function SiteNav() {
       if (pathname !== "/") return;
       const marker = window.scrollY + window.innerHeight * 0.35;
       let current = "top";
-      for (const id of ["remit", "brief"]) {
+      for (const id of ["electrical-works", "remit", "brief"]) {
         const element = document.getElementById(id);
         if (element && element.offsetTop <= marker) current = id;
       }
@@ -151,7 +152,7 @@ export default function SiteNav() {
               <span className="sticker sticker--dark">
                 <span className="live-dot" /> CHENNAI / INDIA
               </span>
-              <span>SECURITY · NETWORKS · AUTOMATION</span>
+              <span>ELECTRICAL · SECURITY · NETWORKS</span>
             </div>
           </motion.div>
         )}

@@ -5,12 +5,14 @@ import SystemsGrid from "@/components/deck/SystemsGrid";
 import Protocol from "@/components/deck/Protocol";
 import Brief from "@/components/deck/Brief";
 import Transmit from "@/components/deck/Transmit";
+import ElectricalWorks from "@/components/deck/ElectricalWorks";
 
 export default function HomePage() {
   return (
     <main id="main">
       <DeckHero />
       <FeedTicker />
+      <ElectricalWorks />
       <Remit />
       <SystemsGrid />
       <Protocol />

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Brand from "./Brand";
-import { contact } from "@/lib/content";
+import { contact, social } from "@/lib/content";
 import "./SiteFooter.css";
 
 const nav = [
   { label: "INDEX", href: "/" },
+  { label: "ELECTRICAL", href: "/#electrical-works" },
   { label: "REMIT", href: "/#remit" },
   { label: "SYSTEMS", href: "/services" },
   { label: "BRIEF", href: "/#brief" },
@@ -22,8 +23,8 @@ export default function SiteFooter() {
           <div className="foot__brand">
             <Brand />
             <p>
-              Security, networks and automation — designed, installed and held
-              to account by one team.
+              Electrical works, security, networks and automation — designed,
+              installed and held to account by one team.
             </p>
             <span className="sticker sticker--orange">
               <span className="live-dot" /> AVAILABLE FOR PROJECTS
@@ -47,6 +48,9 @@ export default function SiteFooter() {
                 {email}
               </a>
             ))}
+            <a href={social.url} target="_blank" rel="noopener noreferrer">
+              {social.handle} ↗
+            </a>
           </div>
 
           <div className="foot__col">
@@ -64,7 +68,7 @@ export default function SiteFooter() {
         <div className="foot__base">
           <span>© {new Date().getFullYear()} BRIGHTLIFE ENGINEERING WORKS</span>
           <span>OPS DECK / VERSION 02</span>
-          <span>CHENNAI, INDIA — 13.0827° N / 80.2707° E</span>
+          <span>CHENNAI, INDIA — 13.1361° N / 80.2973° E</span>
         </div>
       </div>
     </footer>

@@ -67,9 +67,11 @@ export default function DeckHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: EASE }}
           >
-            We design, install and maintain the systems that keep people, places
-            and data safe — surveillance, access, networks, automation and fire
-            safety, wired together by one team.
+            Residential and commercial electrical work — total wiring, CCTV,
+            AC installation, inverters and distribution — alongside the
+            surveillance, networks and safety systems that keep people, places
+            and data protected. One accountable team, from first fix to final
+            handover.
           </motion.p>
 
           <motion.div
