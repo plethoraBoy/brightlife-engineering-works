@@ -1,4 +1,4 @@
-# WRAPTECH Enterprises
+# Brightlife Engineering Works
 
 Marketing site rebuilt on **Next.js 16 (App Router)** with a new "OPS DECK"
 visual system: brutalist structure, aurora-lit dark panels, HUD telemetry

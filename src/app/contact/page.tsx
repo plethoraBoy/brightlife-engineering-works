@@ -181,7 +181,7 @@ export default function ContactPage() {
 
               <div className="con-map__frame">
                 <iframe
-                  title="Map showing WRAPTECH's location in Anakaputhur, Chennai"
+                  title="Map showing Brightlife Engineering Works' location in Anakaputhur, Chennai"
                   src={contact.mapSrc}
                   loading="lazy"
                   allowFullScreen
@@ -303,7 +303,7 @@ export default function ContactPage() {
                 )}
 
                 <div className="mono con-console__foot">
-                  <span>WRAPTECH / CHN</span>
+                  <span>BRIGHTLIFE / CHN</span>
                   <span>CHANNEL 05 — OPEN</span>
                 </div>
               </div>

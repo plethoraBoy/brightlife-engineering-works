@@ -58,11 +58,11 @@ export default function SiteFooter() {
         </div>
 
         <div className="foot__wordmark" aria-hidden="true">
-          WRAPTECH
+          BRIGHTLIFE
         </div>
 
         <div className="foot__base">
-          <span>© {new Date().getFullYear()} WRAPTECH ENTERPRISES</span>
+          <span>© {new Date().getFullYear()} BRIGHTLIFE ENGINEERING WORKS</span>
           <span>OPS DECK / VERSION 02</span>
           <span>CHENNAI, INDIA — 13.0827° N / 80.2707° E</span>
         </div>

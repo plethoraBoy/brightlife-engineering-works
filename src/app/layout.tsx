@@ -27,15 +27,14 @@ const mono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wraptech.example"),
   title: {
-    default: "WRAPTECH — Systems, live on site",
-    template: "%s / WRAPTECH",
+    default: "Brightlife Engineering Works — Systems, live on site",
+    template: "%s / Brightlife Engineering Works",
   },
   description:
-    "WRAPTECH Enterprises designs, installs and maintains security, surveillance, networking, automation and safety systems across Chennai and beyond.",
+    "Brightlife Engineering Works designs, installs and maintains security, surveillance, networking, automation and safety systems across Chennai and beyond.",
   keywords: [
-    "WRAPTECH",
+    "Brightlife Engineering Works",
     "CCTV Chennai",
     "security systems",
     "network infrastructure",
@@ -44,7 +43,7 @@ export const metadata: Metadata = {
     "MEP engineering",
   ],
   openGraph: {
-    title: "WRAPTECH — Systems, live on site",
+    title: "Brightlife Engineering Works — Systems, live on site",
     description:
       "Security, surveillance, networking, automation and safety — one team, one accountable system.",
     type: "website",
@@ -54,7 +53,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#0a0d0f",
-  colorScheme: "light",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
